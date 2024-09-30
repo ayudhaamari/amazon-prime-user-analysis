@@ -157,10 +157,13 @@ Great Expectations is used to ensure data quality. Key expectations include:
 
 The project includes interactive dashboards created using Kibana. These visualizations provide insights into:
 
-- 👥 User demographics
-- 📈 Subscription trends
-- 💰 Revenue analysis
-- 🌍 Geographic user distribution
+- 📱 Device usage patterns
+- 💳💰 Payment method analysis
+- 📈 Feedback ratings over time
+- 🎭 Genre preferences
+- 👴 Age distribution
+- ⚧️ Gender breakdown
+
 
 <p align="center">
   <img src="dashboard-kibana/dashboard.jpg" alt="Kibana Dashboard">

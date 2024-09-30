@@ -143,7 +143,7 @@ CSV HEADER;
 
 ## 🔍 Data Validation
 
-We use Great Expectations to ensure data quality. Key expectations include:
+Great Expectations is used to ensure data quality. Key expectations include:
 
 - No missing values in critical fields
 - Date fields in correct format
@@ -151,7 +151,7 @@ We use Great Expectations to ensure data quality. Key expectations include:
 - Categorical fields containing only predefined values
 - etc ...
 
-> 💡 **Note:** For a comprehensive view of our data validation process and all expectations, please refer to the `data-validation-great-expectation.ipynb` notebook in the project root directory. This notebook contains detailed explanations, code, and results of our Great Expectations implementation.
+> 💡 **Note:** For a comprehensive view of the data validation process and all expectations, please refer to the `data-validation-great-expectation.ipynb` notebook in the project root directory. This notebook contains detailed explanations, code, and results of the Great Expectations implementation.
 
 ## 📈 Visualization
 
@@ -178,23 +178,23 @@ To run the ETL pipeline:
 
 ## 🔄 Airflow Process
 
-Our ETL pipeline is orchestrated using Apache Airflow. Below are visual representations of our Airflow setup and DAG:
+The ETL pipeline is orchestrated using Apache Airflow. Below are visual representations of the Airflow setup and DAG:
 
 ### Airflow Dashboard
 <p align="center">
   <img src="images/airflow.jpg" alt="Airflow Dashboard">
   <br>
-  <em>Overview of the Airflow dashboard showing our DAGs</em>
+  <em>Overview of the Airflow dashboard showing the DAGs</em>
 </p>
 
 ### DAG Graph View
 <p align="center">
   <img src="images/airflow-2.jpg" alt="Airflow DAG Graph">
   <br>
-  <em>Detailed view of our Amazon Prime ETL DAG graph, showing the sequence and dependencies of tasks</em>
+  <em>Detailed view of the Amazon Prime ETL DAG graph, showing the sequence and dependencies of tasks</em>
 </p>
 
-These images provide a clear visualization of our workflow, demonstrating the structure and flow of our data processing pipeline.
+These images provide a clear visualization of the workflow, demonstrating the structure and flow of the data processing pipeline.
 
 ## 📚 Documentation
 
@@ -203,8 +203,6 @@ For more detailed information about the project components, please refer to the 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-
 
 ---
 ## 📞 Contact

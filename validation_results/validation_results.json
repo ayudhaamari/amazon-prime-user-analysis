@@ -1,0 +1,281 @@
+{
+  "results": [
+    {
+      "result": {
+        "observed_value": [
+          "user_id",
+          "name",
+          "email_address",
+          "username",
+          "date_of_birth",
+          "gender",
+          "location",
+          "membership_start_date",
+          "membership_end_date",
+          "subscription_plan",
+          "payment_information",
+          "renewal_status",
+          "usage_frequency",
+          "purchase_history",
+          "favorite_genres",
+          "devices_used",
+          "engagement_metrics",
+          "feedbackratings",
+          "customer_support_interactions"
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column_list": [
+            "user_id",
+            "name",
+            "email_address",
+            "username",
+            "date_of_birth",
+            "gender",
+            "location",
+            "membership_start_date",
+            "membership_end_date",
+            "subscription_plan",
+            "payment_information",
+            "renewal_status",
+            "usage_frequency",
+            "purchase_history",
+            "favorite_genres",
+            "devices_used",
+            "engagement_metrics",
+            "feedbackratings",
+            "customer_support_interactions"
+          ],
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "user_id",
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_be_unique",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "email_address",
+          "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_match_regex",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "date_of_birth",
+          "strftime_format": "%Y-%m-%d",
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_match_strftime_format",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "gender",
+          "value_set": [
+            "Male",
+            "Female"
+          ],
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "customer_support_interactions",
+          "min_value": 0,
+          "max_value": 10,
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_be_between",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "element_count": 2500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "name",
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "meta": {}
+      },
+      "success": true
+    },
+    {
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      },
+      "expectation_config": {
+        "kwargs": {
+          "column": "feedbackratings",
+          "type_list": [
+            "FLOAT",
+            "float",
+            "DECIMAL"
+          ],
+          "result_format": "BASIC"
+        },
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "meta": {}
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 8,
+    "successful_expectations": 8,
+    "unsuccessful_expectations": 0,
+    "success_percent": 100.0
+  },
+  "evaluation_parameters": {},
+  "meta": {
+    "great_expectations_version": "0.18.9",
+    "expectation_suite_name": "default",
+    "run_id": {
+      "run_time": "2024-09-13T10:00:53.699507+07:00",
+      "run_name": null
+    },
+    "batch_kwargs": {
+      "ge_batch_id": "63b5f6ad-717c-11ef-890c-d2e7598cc264"
+    },
+    "batch_markers": {},
+    "batch_parameters": {},
+    "validation_time": "20240913T030053.699507Z",
+    "expectation_suite_meta": {
+      "great_expectations_version": "0.18.9"
+    }
+  },
+  "success": true
+}

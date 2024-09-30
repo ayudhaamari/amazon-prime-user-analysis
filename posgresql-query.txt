@@ -1,0 +1,35 @@
+-- Link to dataset URL: https://www.kaggle.com/datasets/arnavsmayan/amazon-prime-userbase-dataset/data
+
+begin;
+
+-- Create database
+CREATE DATABASE airflow;
+
+-- Create amazon_prime_userbase table
+CREATE TABLE amazon_prime_userbase (
+"User ID" SERIAL PRIMARY KEY,
+"Name" VARCHAR(255),
+"Email Address" VARCHAR(255),
+"Username" VARCHAR(255),
+"Date of Birth" DATE,
+"Gender" VARCHAR(50),
+"Location" VARCHAR(255),
+"Membership Start Date" DATE,
+"Membership End Date" DATE,
+"Subscription Plan" VARCHAR(50),
+"Payment Information" VARCHAR(50),
+"Renewal Status" VARCHAR(50),
+"Usage Frequency" VARCHAR(50),
+"Purchase History" VARCHAR(255),
+"Favorite Genres" VARCHAR(255),
+"Devices Used" VARCHAR(255),
+"Engagement Metrics" VARCHAR(50),
+"Feedback/Ratings" NUMERIC(3,1),
+"Customer Support Interactions" INTEGER
+);
+
+-- Copy data into amazon_prime_userbase
+COPY amazon_prime_userbase
+FROM 'C:\xampp\tmp\dataset_raw.csv'
+DELIMITER ','
+CSV HEADER;
